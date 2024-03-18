@@ -197,7 +197,7 @@ if selected == 'Home':
    col1.markdown("### :blue[Domain] : 👉 Real Estate")
    col1.markdown("### :blue[Skills take away From This Project] :👉 Data Wrangling, EDA, Model Building, Model Deployment")
    col1.markdown("### :blue[Overview] : 👉Singapore  Resale Flat Prices Predicting, then build regression ML models and performance based on model accuracy and RMSE in Python .")
-   flat=Image.open(r'C:\Users\user\Desktop\python\Singapore_Resale\1_N0YOUGrSXw9ILS9nCczDjg.jpg')
+   flat=Image.open(r'Singapore_Resale/1_N0YOUGrSXw9ILS9nCczDjg.jpg')
    col2.image(flat)
    
 
