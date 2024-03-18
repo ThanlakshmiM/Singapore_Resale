@@ -14,10 +14,10 @@ import numpy as np
 
 def concatenate_preprocess():
     df1=pd.read_csv(r"Singapore_Resale/ResaleFlatPricesBasedonApprovalDate19901999.csv")
-    df2=pd.read_csv(r"Singapore_Resale\ResaleFlatPricesBasedonApprovalDate2000Feb2012.csv")
-    df3=pd.read_csv(r"Singapore_Resale\ResaleFlatPricesBasedonRegistrationDateFromMar2012toDec2014.csv")
-    df4=pd.read_csv(r"Singapore_Resale\ResaleFlatPricesBasedonRegistrationDateFromJan2015toDec2016.csv")
-    df5=pd.read_csv(r"Singapore_Resale\ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv")
+    df2=pd.read_csv(r"Singapore_Resale/ResaleFlatPricesBasedonApprovalDate2000Feb2012.csv")
+    df3=pd.read_csv(r"Singapore_Resale/ResaleFlatPricesBasedonRegistrationDateFromMar2012toDec2014.csv")
+    df4=pd.read_csv(r"Singapore_Resale/ResaleFlatPricesBasedonRegistrationDateFromJan2015toDec2016.csv")
+    df5=pd.read_csv(r"Singapore_Resale/ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv")
     
     # Create a list of dataframes
     df_list = [df1, df2, df3, df4, df5]
