@@ -233,7 +233,6 @@ if selected == 'Predict':
         # For example, if you have a new data point with 'floor_area_sqm_new' and 'lease_commence_date_new'
         #new_data_point = [[2024,3,26,5,1748,572,1.386294,4.955827,1.098612,1987,4.553877]] 
         new_data_point=np.array([[selling_year,selling_month,Numeric(town,'town'),Numeric(flat_type,'flat_type'),Numeric(block,'block'),Numeric(street_name,'street_name'),Numeric(storey_range,'storey_range'),floor_area_sqm,Numeric(flat_model,'flat_model'),lease_commence_date,remaining_lease]])
-        st.write(new_data_point)
         predicted_price = model.predict(new_data_point)
        # print(f"Predicted Resale Price for the new data point: {predicted_price[0]}")
     
