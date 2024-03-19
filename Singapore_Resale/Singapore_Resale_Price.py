@@ -89,7 +89,7 @@ def Numeric(value,select):
 st.set_page_config(page_title= "Singapore House Price Prediction",
                    page_icon= 'random',
                    layout= "wide",)
-st.markdown("<h1 style='text-align: center; color: white;'> Singapore Resale Flat Price Pridiction </h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'> Singapore Resale Flat Price Prediction </h1>", unsafe_allow_html=True)
 
 
 #application background
