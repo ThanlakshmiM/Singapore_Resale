@@ -13,11 +13,11 @@ import numpy as np
 
 
 def concatenate_preprocess():
-    df1=pd.read_csv(r"C:\Users\user\Desktop\python\Singapore_Resale\ResaleFlatPricesBasedonApprovalDate19901999.csv")
-    df2=pd.read_csv(r"C:\Users\user\Desktop\python\Singapore_Resale\ResaleFlatPricesBasedonApprovalDate2000Feb2012.csv")
-    df3=pd.read_csv(r"C:\Users\user\Desktop\python\Singapore_Resale\ResaleFlatPricesBasedonRegistrationDateFromMar2012toDec2014.csv")
-    df4=pd.read_csv(r"C:\Users\user\Desktop\python\Singapore_Resale\ResaleFlatPricesBasedonRegistrationDateFromJan2015toDec2016.csv")
-    df5=pd.read_csv(r"C:\Users\user\Desktop\python\Singapore_Resale\ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv")
+    df1=pd.read_csv(r"Singapore_Resale/ResaleFlatPricesBasedonApprovalDate19901999.csv")
+    df2=pd.read_csv(r"Singapore_Resale/ResaleFlatPricesBasedonApprovalDate2000Feb2012.csv")
+    df3=pd.read_csv(r"Singapore_Resale/ResaleFlatPricesBasedonRegistrationDateFromMar2012toDec2014.csv")
+    df4=pd.read_csv(r"Singapore_Resale/ResaleFlatPricesBasedonRegistrationDateFromJan2015toDec2016.csv")
+    df5=pd.read_csv(r"Singapore_Resale/ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv")
     
     # Create a list of dataframes
     df_list = [df1, df2, df3, df4, df5]
@@ -197,7 +197,7 @@ if selected == 'Home':
    col1.markdown("### :blue[Domain] : 👉 Real Estate")
    col1.markdown("### :blue[Skills take away From This Project] :👉 Data Wrangling, EDA, Model Building, Model Deployment")
    col1.markdown("### :blue[Overview] : 👉Singapore  Resale Flat Prices Predicting, then build regression ML models and performance based on model accuracy and RMSE in Python .")
-   flat=Image.open(r'C:\Users\user\Desktop\python\Singapore_Resale\1_N0YOUGrSXw9ILS9nCczDjg.jpg')
+   flat=Image.open(r'Singapore_Resale/1_N0YOUGrSXw9ILS9nCczDjg.jpg')
    col2.image(flat)
    
 
@@ -233,7 +233,6 @@ if selected == 'Predict':
         # For example, if you have a new data point with 'floor_area_sqm_new' and 'lease_commence_date_new'
         #new_data_point = [[2024,3,26,5,1748,572,1.386294,4.955827,1.098612,1987,4.553877]] 
         new_data_point=np.array([[selling_year,selling_month,Numeric(town,'town'),Numeric(flat_type,'flat_type'),Numeric(block,'block'),Numeric(street_name,'street_name'),Numeric(storey_range,'storey_range'),floor_area_sqm,Numeric(flat_model,'flat_model'),lease_commence_date,remaining_lease]])
-        st.write(new_data_point)
         predicted_price = model.predict(new_data_point)
        # print(f"Predicted Resale Price for the new data point: {predicted_price[0]}")
     
