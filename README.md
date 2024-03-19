@@ -15,4 +15,6 @@ Data Collection and Preprocessing: Collect a dataset of resale flat transactions
 Feature Engineering: Extract relevant features from the dataset, including town, flat type, storey range, floor area, flat model, and lease commence date. Create any additional features that may enhance prediction accuracy.
 Model Selection and Training: Choose an appropriate machine learning model for regression (e.g., linear regression, decision trees, or random forests). Train the model on the historical data, using a portion of the dataset for training.
 Model Evaluation: Evaluate the model's predictive performance using regression metrics such as Mean Absolute Error (MAE), Mea
-Project Streamlit app Link: https://singaporeresale-y.streamlit.app/
+
+
+Project app Link:https://singaporeresale-tmhghfoccrkmazul45tmqu.streamlit.app/ 
